@@ -1,0 +1,18 @@
+     Task 1
+1-open the project Folder in IDE having scrapy installed 
+2- To run task 1 open terminal write command 
+                   scrapy crawl books
+3-This web crawler is made in python using scrapy. We created a file name books in the spider folder 
+4-In this file we create a class whichis inherited by scrapy.Spider
+5-The class have attribute name shows name of your crawler.
+6-Then we open the csv file with delimeter "\t" to replace by defaut "," sperator with tab space.
+7-In start_requests(self) function we have list of urls to scrap
+8-Then the loop iterate through all the urls and give the http response to the parse function.
+9-In this function we use xpath quries to extract specified data as author,title etc
+10-In parse function we get the data of each book and write as row in csv file 
+
+Task2
+1- This is a quite simple task it has 3 functions 1 of them is helper function to truncate the files every time for new data
+2-Validate function read data from sample.txt and use Reqular expresion library's search function to check weather the password contains One small letter one capital letter one digit and one punctuation to classify weather passwod is week or strong
+3-generate_pass function is used to generate random passwords and write them in file name sample.txt It use function random.choice to get random letter from domain. Domain consist of all small aplhabets,capital,all digits 0-9 and punctuaion #*&
+
